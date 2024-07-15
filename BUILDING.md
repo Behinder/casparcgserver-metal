@@ -18,25 +18,7 @@ During the build, you can specify the CMake option `CASPARCG_DOWNLOAD_MIRROR` to
 If you want to be able to build CasparCG offline, you may need to manually seed this cache. You can do so by placing the correct tar.gz or zip into a folder and using `CASPARCG_DOWNLOAD_CACHE` to tell CMake where to find it.
 You can figure out which files you need by looking at each of the `ExternalProject_Add` function calls inside of [Bootstrap_Linux.cmake](./src/CMakeModules/Bootstrap_Linux.cmake) or [Bootstrap_Windows.cmake](./src/CMakeModules/Bootstrap_Windows.cmake). Some of the ones listed are optional, depending on other CMake flags.
 
-# Windows
 
-## Development using Visual Studio
-
-1. Install Visual Studio 2022.
-
-2. Install CMake (http://www.cmake.org/download/).
-
-3. `git clone --single-branch --branch master https://github.com/CasparCG/server casparcg-server-master`
-
-4. `cd casparcg-server-master`
-
-5. `mkdir build`
-
-6. `cd build`
-
-7. `cmake -G "Visual Studio 17 2022" -A x64 ../src`
-
-8. Open `CasparCG Server.sln`
 
 # Linux
 
